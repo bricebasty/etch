@@ -5,7 +5,6 @@
 
 .gridElement {
 	border: 1px solid grey;
-	width: 30%;
 	margin-top: -1px;
     margin-left: -1px;
 }
@@ -16,12 +15,8 @@
 }
 
 #container {
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    max-width: 66%;
+	display: grid;
+	grid-template : repeat(4, 1fr) / repeat(4, 1fr);
+    max-width: 70%;
     margin: auto;
 }
