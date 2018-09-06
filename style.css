@@ -3,20 +3,28 @@
    License: none (public domain)
 */
 
+#reset {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .gridElement {
-	border: 1px solid grey;
-	margin-top: -1px;
-    margin-left: -1px;
+  border: 1px solid #eee;
+  margin-top: -1px;
+  margin-left: -1px;
+  min-width: 10px;
+  min-height: 10px;
 }
 
 .blackBackground {
-	background-color: #000;
-	color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 #container {
-	display: grid;
-	grid-template : repeat(4, 1fr) / repeat(4, 1fr);
-    max-width: 70%;
-    margin: auto;
+  display: grid;
+  grid-template : repeat(4, 1fr) / repeat(4, 1fr);
+  max-width: 70%;
+  margin: auto;
 }
