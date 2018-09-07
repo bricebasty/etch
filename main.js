@@ -2,7 +2,7 @@
 const container = document.querySelector('#container');
 
 // Loop to create divs
-for (let i = 0; i < 16; i += 1) {
+for (let i = 0; i < 100; i += 1) {
   container.innerHTML += "<div class='gridElement'></div>";
 }
 
@@ -20,7 +20,7 @@ function addBlackBackground(element) {
 // Add blackBackground to each gridElement OK
 function listenToGrid() {
   gridElement.forEach((element) => {
-    element.addEventListener('mouseover', (event) => addBlackBackground(event.target), false);
+    element.addEventListener('mouseover', event => addBlackBackground(event.target), false);
   });
 }
 
@@ -33,7 +33,7 @@ function removeBlackBackground() {
 
 // Ask how many squares you want for the next grid OK
 function askHowManySquares() {
-  const squaresNumber = window.prompt('How many squares per side for next grid?');
+  const squaresNumber = window.prompt('How many squares per side for next grid? (max 30 or bug)');
   return squaresNumber;
 }
 

@@ -22,7 +22,7 @@
 
 #container {
   display: grid;
-  grid-template : repeat(4, 1fr) / repeat(4, 1fr);
+  grid-template : repeat(10, 1fr) / repeat(10, 1fr);
   align-items: stretch;
   justify-items: stretch;
   align-content: stretch;
