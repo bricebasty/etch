@@ -13,18 +13,21 @@
   border: 1px solid #eee;
   margin-top: -1px;
   margin-left: -1px;
-  min-width: 10px;
-  min-height: 10px;
 }
 
 .blackBackground {
   background-color: #000;
-  color: #fff;
+  border: 1px solid #111;
 }
 
 #container {
   display: grid;
   grid-template : repeat(4, 1fr) / repeat(4, 1fr);
-  max-width: 70%;
+  align-items: stretch;
+  justify-items: stretch;
+  align-content: stretch;
+  justify-content: stretch;
+  width: 300px;
+  height: 300px;
   margin: auto;
 }
