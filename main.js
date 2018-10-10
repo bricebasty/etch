@@ -19,14 +19,14 @@ function addBlackBackground(element) {
 
 // Add blackBackground to each gridElement OK
 function listenToGrid() {
-  gridElement.forEach((element) => {
+  gridElement.forEach(element => {
     element.addEventListener('mouseover', event => addBlackBackground(event.target), false);
   });
 }
 
 // Remove blackBackgroudn to each gridElement OK
 function removeBlackBackground() {
-  gridElement.forEach((element) => {
+  gridElement.forEach(element => {
     element.classList.remove('blackBackground');
   });
 }
@@ -64,7 +64,7 @@ function createGrid(squaresNumber) {
 }
 
 // Actions when button is clicked
-function clickButton() {
+function listentoButton() {
   button.addEventListener('click', () => {
     removeBlackBackground();
     const squares = askHowManySquares();
@@ -75,4 +75,4 @@ function clickButton() {
 
 // Call functions
 listenToGrid();
-clickButton();
+listentoButton();
